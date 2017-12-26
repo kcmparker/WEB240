@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Candyland Crochet</title>
+<meta charset="utf-8">
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
-<body style="background-color: #f2f2f2">
+<body style="background-color: lightgray">
     
 <header>
     <img src="Assets/logo.svg" style="width: 40%" alt="Candyland Crochet">    
@@ -13,27 +14,28 @@
     
 <nav>
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="designs.html">Designs</a></li>
-        <dd>Hats, Rugs, Blankets</dd>
-        <dd>and more!</dd>
-        <li><a href="contact.html">Contact Me</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Design Gallery</a>
+            <div class="dropdown-content">
+                <a href="/designs.html#apparel" title="Apparel">Apparel</a>
+                <a href="/designs.html#blankets" title="Blankets">Blankets</a>
+                <a href="/designs.html#hats" title="Hats">Hats</a>
+                <a href="/designs.html#kitchen" title="Kitchen">Kitchen</a>
+                <a href="/designs.html#rugs" title="Rugs">Rugs</a>
+            </div>
+        </li>
+         <li><a href="contact.html">Contact Me</a></li>
     </ul>
 </nav>
 
-<section class="leftColumn"><img src="Images/Hat_Frozen.jpg" style="width: 300px; border-style: double; border-width: thick; border-color: goldenrod" alt="Frozen Character Hats: Anna and Elsa"></section>
-    
-<section class="middleColumn">
-    <h1>Custom Orders Crocheted with Love</h1><br>
-    
-    <h2>Candy started crocheting cute character hats as a hobby to fill the long, cold winters in Minnesota.  Soon, her darling creations became coveted by close family, friends, and co-workers… and Candyland Crochet was born.<br>
-        <br>
-    Visit the <a href="designs.html"; style="color: black; text-decoration-color: black">Design Gallery</a> to see all the adorable creations Candy has crocheted for special gifts and occasions.  <a href="designs.html"; style="color: black; text-decoration-color: black">Contact Candy</a> to discuss any custom order you want to be crocheted with love.  Thank you for visiting Candyland Crochet!</h2>
-    <br><br>
-</section>   
+<h1>Custom Orders Crocheted with Love</h1><br>
+<div id="crochet"><img src="Images/crochet.jpg" alt="Crocheting"></div>
+        
+<h2>Candy started crocheting cute character hats as a hobby to fill the long, cold winters in Minnesota.  Soon, her darling creations became coveted by close family, friends, and co-workers… and Candyland Crochet was born.      Visit the <a href="designs.html"; style="color: black; text-decoration-color: black">Design Gallery</a> to see all the adorable creations Candy has crocheted for special gifts and occasions.  <a href="contact.html"; style="color: black; text-decoration-color: black">Contact Candy</a> to discuss any custom order you want to be crocheted with love.  Thank you for visiting Candyland Crochet!</h2>
+   
 
 <footer>Website created by Kristin Parker, 2017</footer>    
-
 
 </body>
 </html>
