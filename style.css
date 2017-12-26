@@ -1,39 +1,64 @@
+/* CSS for index.html */
 header{
     padding: 5px;
     clear: left;
     text-align: center;
     image-orientation: center;
-    border-bottom-color: #f889e8;
+    border-bottom-color: hotpink;
     border-bottom-style: dashed;
     border-bottom-width: thin;
 }
-nav{
-    float: right;
-    max-width: 180px;
-    border-color: #f998e8;
-    border-style: dashed;
-    border-width: thin;
-    margin-top: 10px;
-}
 nav ul{
-    list-style-type: circle;
-    padding-right: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: hotpink;
 }
-nav ul a{
-    text-decoration: none;
+nav li{
+    float: left;
+    border-right: 1px solid lightgrey;
+}
+nav li a, .dropbtn{
+    display: inline-block;
     color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
-nav ul dd{
-    color: goldenrod;
-    font-style: italic;
+nav li a:hover:not(.active), dropdown:hover .dropbtn {
+    background-color: black;
+    color: hotpink;
 }
-.leftColumn {
+.active {
+    font-weight: bold;
+    text-decoration-line: underline;
+}
+nav li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position:absolute;
+    background-color: gold;
+    min-width: 150px;
+    z-index: 1;
+}
+.dropdown-content a {
+    display: block;
+    text-align: left;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+section.leftColumn {
     float: left;
     padding-top: 1%;
     padding-left: 5%;
     width: 35%;
+    overflow: hidden;
 }
-.middleColumn{
+section.middleColumn{
     padding-left: 10%;
     width: 65%;
     font-size: large;
@@ -43,18 +68,67 @@ nav ul dd{
 h1 {
     font-family: cursive;
     font-size: 36px;
+    text-align: center;
     float: none;
+    clear: both;
 }
 h2 {
     font-family:cursive;
     font-size: 16px;
-    float:none
+    margin: 60px 180px 60px 180px;
+}
+#crochet img {
+    margin: auto;
+    display: block;
 }
 footer {
+    float: right;
+    width: 100%;
     color: black;
     font-size: small;
 	text-align: right;
 	font-style: italic;
     padding: 5px;
-    background-color: #f889e8;
+    background-color: hotpink;
+}
+/* CSS for designs.html */
+h3 {
+    font-family: cursive;
+    font-size: 36px;
+    border-bottom: 5px solid black;
+    float:  none;
+    clear: both;
+}
+figure {
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    margin: 20px;
+    float: left;
+    overflow: hidden;
+}
+img {
+    height: 280px;
+}
+figcaption {
+    background-color: hotpink;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: large;
+    text-emphasis: bold;
+    color: black;
+}
+.gallery {
+    margin-top: 100px;
+}
+/* CSS for contact.html */
+h4 {
+    text-align: center;
+    font-size: large;
+}
+#yarn img {
+    margin: auto;
+    display: block;
 }
