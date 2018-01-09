@@ -4,9 +4,9 @@ header{
     clear: left;
     text-align: center;
     image-orientation: center;
-    border-bottom-color: hotpink;
-    border-bottom-style: dashed;
-    border-bottom-width: thin;
+}
+body {
+ background-color: lightgoldenrodyellow;   
 }
 nav ul{
     list-style-type: none;
@@ -17,7 +17,7 @@ nav ul{
 }
 nav li{
     float: left;
-    border-right: 1px solid lightgrey;
+    border-right: 1px solid lightgray;
 }
 nav li a, .dropbtn{
     display: inline-block;
@@ -27,7 +27,7 @@ nav li a, .dropbtn{
     text-decoration: none;
 }
 nav li a:hover:not(.active), dropdown:hover .dropbtn {
-    background-color: black;
+    background-color: lightgray;
     color: hotpink;
 }
 .active {
@@ -40,7 +40,7 @@ nav li.dropdown {
 .dropdown-content {
     display: none;
     position:absolute;
-    background-color: gold;
+    background-color: lightgray;
     min-width: 150px;
     z-index: 1;
 }
@@ -67,19 +67,22 @@ section.middleColumn{
 }
 h1 {
     font-family: cursive;
-    font-size: 36px;
+    font-size: 40px;
     text-align: center;
     float: none;
     clear: both;
 }
 h2 {
-    font-family:cursive;
-    font-size: 16px;
-    margin: 60px 180px 60px 180px;
+    font-family:sans-serif;
+    font-size: 18px;
+    text-align: left;
 }
-#crochet img {
+#crochet {
     margin: auto;
     display: block;
+    border-radius: 20px;
+    border: 5px solid hotpink;
+    margin-bottom: 50px;
 }
 footer {
     float: right;
@@ -91,6 +94,7 @@ footer {
     padding: 5px;
     background-color: hotpink;
 }
+
 /* CSS for designs.html */
 h3 {
     font-family: cursive;
@@ -123,12 +127,49 @@ figcaption {
 .gallery {
     margin-top: 100px;
 }
+
 /* CSS for contact.html */
-h4 {
-    text-align: center;
-    font-size: large;
+article {
+    margin-left: 30%;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 20px;
 }
-#yarn img {
+#yarn {
     margin: auto;
     display: block;
+}
+aside {
+    float: left;
+    max-width: 30%;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+}
+label{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#name, #email {
+    width: 20%;
+}
+textarea {
+    width: 100%;
+    height: 220px;
+    padding: 10px;
+    border: 2px solid lightgrey; 
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    resize: vertical
+}
+input[type=submit] {
+    background-color: hotpink;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
 }
