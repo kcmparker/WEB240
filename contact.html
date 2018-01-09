@@ -6,7 +6,7 @@
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
     
-<body style="background-color: lightgray">
+<body>
     
 <header>
     <img src="Assets/Logo.svg" style="width: 40%" alt="Candyland Crochet">    
@@ -29,11 +29,28 @@
     </ul>
 </nav>
 
-<h1>Custom Orders Crocheted with Love</h1><br>
-<div id="yarn"><img src="Images/yarn.jpg" alt="Yarn"></div>
-<h4><a href="https://www.facebook.com/CandylandCrochet">Follow Us on Facebook!</a></h4>
+<h1>Custom Orders Crocheted with Love</h1>
     
-<footer>Website created by Kristin Parker, 2017</footer>    
+<aside>
+        <img id="yarn" src="Images/yarn.jpg" alt="Yarn">
+	   <p><a href="https://www.facebook.com/CandylandCrochet">Follow Us on Facebook!</a></p>
+</aside>
+
+<article>
+    <form action="mailto:kcmparker@email.phoenix.edu" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+        <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Your email..">
+        <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number...">
+    <br><br>
+        <textarea id="message" name="message" placeholder="Write something.."></textarea>
+        <input type="submit" value="Send">
+    </form>
+</article>
+    
+<footer>Website created by Kristin Parker, 2018</footer>    
     
 </body>
 </html>
