@@ -3,41 +3,72 @@
 <head>
 <title>Candyland Crochet</title>
 <meta charset="utf-8">
+<meta name="description" content="Crocheted crafts and creations by Candy.  Handmade and custom to order.">
+<meta name="keywords" content="crochet, crafts, homemade, Candyland Crochet, handmade, yarn, rugs, hats, blankets">
+<meta name="author" content="Kristin Parker">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     
 <header>
-    <img src="Assets/Logo.svg" style="width: 40%" alt="Candyland Crochet">    
+    <img id="logo" src="Assets/logo.svg" style="width: 40%" alt="Candyland Crochet">    
 </header>
     
 <nav>
     <ul>
         <li><a class="active" href="index.html">Home</a></li>
-        <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Design Gallery</a>
-            <div class="dropdown-content">
-                <a href="designs.html#apparel" title="Apparel">Apparel</a>
-                <a href="designs.html#blankets" title="Blankets">Blankets</a>
-                <a href="designs.html#hats" title="Hats">Hats</a>
-                <a href="designs.html#kitchen" title="Kitchen">Kitchen</a>
-                <a href="designs.html#rugs" title="Rugs">Rugs</a>
-            </div>
-        </li>
-         <li><a href="contact.html">Contact Me</a></li>
+        <li><a href="designs.html">Samples</a></li>
+        <li><a href="contact.html">Contact Me</a></li>
     </ul>
 </nav>
 
 <h1>Custom Orders Crocheted with Love</h1><br>
 
 <aside>
-   <img id="crochet" src="Images/crochet.jpg" alt="Crocheting">
+    <img id="crochet" src="Images/crochet.jpg" alt="Crocheting">
+    <p><a href="https://www.facebook.com/CandylandCrochet"><img src="Assets/FB-FindUsonFacebook-online-100.png" alt="Find us on Facebook"></a></p>
 </aside>
 
-<article><h2>Candy started crocheting cute character hats as a hobby to fill the long, cold winters in Minnesota.  Soon, her darling creations became coveted by close family, friends, and co-workers… and Candyland Crochet was born.<br><br>Visit the <a href="designs.html"; style="color: black; text-decoration-color: black">Design Gallery</a> to see all the adorable creations Candy has crocheted for special gifts and occasions.<br><br><a href="contact.html"; style="color: black; text-decoration-color: black">Contact Candy</a> to discuss any custom order you want to be crocheted with love.  Thank you for visiting Candyland Crochet!</h2>
-</article>   
+<article><h2>Candy started crocheting cute character hats as a hobby to fill the long, cold winters in Minnesota.  Soon, her darling creations became coveted by close family, friends, and co-workers… and Candyland Crochet was born.<br><br>Visit the <a href="designs.html">Samples</a> page to see all the adorable creations Candy has crocheted for special gifts and occasions.<br><br><a href="contact.html">Contact Candy</a> to discuss any custom order you want to be crocheted with love.  Thank you for visiting Candyland Crochet!
+<br><br><br><br>
+Here's what some of Candy's customers have said...</h2>
+<div class="slideshow">
+    <div class="mySlides">
+        <q>Awesome work. Very conscientious and completes quickly.</q>
+        <p class="author"> ~ Paula S.</p>
+    </div>
+    
+    <div class="mySlides">
+        <q>Great product looks absolutely amazing I would recommend this to anyone.</q>
+        <p class="author"> ~ Darrel S.</p>
+    </div>
+    
+    <div class="mySlides">
+        <q>These are adorable!</q>
+        <p class="author"> ~ Suellyn C.</p>
+    </div>
+</div>
+</article>
 
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}
+</script>
+    
 <footer>Website created by Kristin Parker, 2018</footer>    
 
 </body>
