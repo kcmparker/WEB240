@@ -19,51 +19,20 @@ nav li{
     float: left;
     border-right: 1px solid lightgray;
 }
-nav li a, .dropbtn{
+nav li a {
     display: inline-block;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-nav li a:hover:not(.active), dropdown:hover .dropbtn {
+nav li a:hover:not(.active) {
     background-color: lightgray;
     color: hotpink;
 }
 .active {
     font-weight: bold;
     text-decoration-line: underline;
-}
-nav li.dropdown {
-    display: inline-block;
-}
-.dropdown-content {
-    display: none;
-    position:absolute;
-    background-color: lightgray;
-    min-width: 150px;
-    z-index: 1;
-}
-.dropdown-content a {
-    display: block;
-    text-align: left;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-section.leftColumn {
-    float: left;
-    padding-top: 1%;
-    padding-left: 5%;
-    width: 35%;
-    overflow: hidden;
-}
-section.middleColumn{
-    padding-left: 10%;
-    width: 65%;
-    font-size: large;
-    text-emphasis: bold;
-    text-align: center;
 }
 h1 {
     font-family: cursive;
@@ -77,12 +46,14 @@ h2 {
     font-size: 18px;
     text-align: left;
 }
-#crochet {
+img {
+    max-height: 280px;
     margin: auto;
     display: block;
+}
+#crochet {
     border-radius: 20px;
-    border: 5px solid hotpink;
-    margin-bottom: 50px;
+    border: 5px solid black;
 }
 footer {
     float: right;
@@ -103,29 +74,76 @@ h3 {
     float:  none;
     clear: both;
 }
-figure {
-    width: 300px;
-    height: 300px;
-    padding: 20px;
-    text-align: center;
-    margin: 20px;
-    float: left;
-    overflow: hidden;
-}
-img {
-    height: 280px;
-}
-figcaption {
-    background-color: hotpink;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-    font-size: large;
-    text-emphasis: bold;
-    color: black;
-}
 .gallery {
-    margin-top: 100px;
+    position: relative;
+    max-width: 300px;
+    margin: 30px;
+    padding: 5px;
+    float: left;
+
+}
+.image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border: 5px solid black;
+}
+.overlay {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+gallery:hover .image {
+    opacity: 0.3;
+}
+.gallery:hover .overlay {
+  opacity: 1;
+}
+.text {
+    background-color: white;
+    color: hotpink;
+    font-size: 20px;
+    padding: 16px 32px;
+    border: 2px solid lightgrey; 
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+a {
+ color: inherit;
+    text-decoration: none;
+}
+.slideshow {
+    position: relative;
+    background: white;
+    border: 2px solid lightgrey; 
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.mySlides {
+    display: none;
+    padding: 30px;
+    text-align: center;
+}
+q {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+}
+.author {
+    color: hotpink;
+    font-size: 20px;
 }
 
 /* CSS for contact.html */
@@ -135,10 +153,7 @@ article {
     border-radius: 10px;
     padding: 20px;
 }
-#yarn {
-    margin: auto;
-    display: block;
-}
+
 aside {
     float: left;
     max-width: 30%;
@@ -172,4 +187,8 @@ input[type=submit] {
     padding: 5px 20px;
     border-radius: 10px;
     cursor: pointer;
+}
+#yarn {
+    border-radius: 20px;
+    border: 5px solid black;
 }
